@@ -7,3 +7,9 @@
 
 図表類
 <a href="https://docs.google.com/presentation/d/1NDVN8sdXdYtjWizYnXRKTpZyAUvj1PoO93nqQwn5mY4/edit#slide=id.p">novelify - Google スライド</a>
+
+## 技術
+
+## 目的
+
+## 進行
