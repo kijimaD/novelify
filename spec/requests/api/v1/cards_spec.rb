@@ -27,7 +27,7 @@ RSpec.describe 'Card', type: :request do
 
   describe 'POST /api/v1/cards' do
     it '新しいcardを作成する' do
-      story = create(:story, title: "aa")
+      story = create(:story)
       valid_params = { image: 'image', story_id: story.id }
 
       expect { post '/api/v1/cards', params: { card: valid_params } }.to change(Card, :count).by(1)
