@@ -14,7 +14,15 @@
 # https://github.com/sds/overcommit#configuration
 #
 # Uncomment the following lines to make the configuration take effect.
+CommitMsg:
+  CapitalizedSubject:
+      enabled: false
+      description: 'Check subject capitalization'
 
+PrePush:
+  RSpec:
+    enabled: true
+    description: 'Run RSpec test suite'
 #PreCommit:
 #  RuboCop:
 #    enabled: true
