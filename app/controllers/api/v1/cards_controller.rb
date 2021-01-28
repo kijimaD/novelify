@@ -1,15 +1,15 @@
-module API
+module Api
   module V1
     class CardsController < ApplicationController
       before_action :set_card, only: [:show, :update, :destroy]
 
       def index
-        cards = Cards.order(created_at: :desc)
+        cards = Card.order(created_at: :desc)
         render json: { status: 'SUCCESS', message: 'Loaded cards', data: cards }
       end
 
       def show
-        render json: { status: 'SUCCESS', message: 'Loaded the story', data: @card }
+        render json: { status: 'SUCCESS', message: 'Loaded the cards', data: @card }
       end
 
       def create
@@ -41,7 +41,7 @@ module API
       end
 
       def card_params
-        params.require(:card).permit(:image)
+        params.require(:card).permit(:image, :story_id)
       end
     end
   end
