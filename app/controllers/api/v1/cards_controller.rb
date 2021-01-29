@@ -13,7 +13,7 @@ module Api
       end
 
       def create
-        card = Card.new(card_params)
+        card = Card.new({"story_id": params["story_id"]})
         if card.save
           render json: { status: 'SUCCESS', data: card }
         else
@@ -41,7 +41,7 @@ module Api
       end
 
       def card_params
-        params.require(:card).permit(:image, :story_id)
+        params.require(:card).permit(:image)
       end
     end
   end
