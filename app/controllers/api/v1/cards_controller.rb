@@ -2,6 +2,7 @@ module Api
   module V1
     class CardsController < ApplicationController
       before_action :set_card, only: [:show, :update, :destroy]
+      before_action :set_story, only: [:create]
 
       def index
         cards = Card.order(created_at: :desc)
@@ -13,7 +14,7 @@ module Api
       end
 
       def create
-        card = Card.new({"story_id": params["story_id"]})
+        card = @story.cards.create(card_params)
         if card.save
           render json: { status: 'SUCCESS', data: card }
         else
@@ -38,6 +39,10 @@ module Api
 
       def set_card
         @card = Card.find(params[:id])
+      end
+
+      def set_story
+        @story = Story.find(params[:story_id])
       end
 
       def card_params
