@@ -2,7 +2,6 @@ require 'rails_helper'
 
 RSpec.describe 'Story', type: :request do
   describe 'GET /api/v1/stories' do
-
     it '全てのstoryを取得する' do
       create_list(:story, 10)
   

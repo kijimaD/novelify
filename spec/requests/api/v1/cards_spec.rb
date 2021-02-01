@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'Card', type: :request do
-
   let(:story) { create(:story) }
   let(:card) { create(:card, image: 'test-image') }
 

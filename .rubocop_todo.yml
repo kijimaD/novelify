@@ -28,16 +28,6 @@ Layout/EmptyLines:
 
 # Offense count: 3
 # Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: empty_lines, no_empty_lines
-Layout/EmptyLinesAroundBlockBody:
-  Exclude:
-    - 'db/schema.rb'
-    - 'spec/requests/api/v1/cards_spec.rb'
-    - 'spec/requests/api/v1/stories_spec.rb'
-
-# Offense count: 3
-# Cop supports --auto-correct.
 # Configuration parameters: AllowForAlignment, AllowBeforeTrailingComments, ForceEqualSignAlignment.
 Layout/ExtraSpacing:
   Exclude:
