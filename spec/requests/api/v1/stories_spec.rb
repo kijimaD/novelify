@@ -38,7 +38,7 @@ RSpec.describe 'Story', type: :request do
     it 'storyの編集を行う' do
       story = create(:story, title: 'old-title')
   
-      put "/api/v1/stories/#{story.id}", params: { story: {title: 'new-title'}  }
+      put "/api/v1/stories/#{story.id}", params: { story: {title: 'new-title'} }
       json = JSON.parse(response.body)
   
       expect(response.status).to eq(200)

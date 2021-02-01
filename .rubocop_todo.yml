@@ -26,15 +26,6 @@ Layout/EmptyLines:
   Exclude:
     - 'config/environments/development.rb'
 
-# Offense count: 3
-# Cop supports --auto-correct.
-# Configuration parameters: AllowForAlignment, AllowBeforeTrailingComments, ForceEqualSignAlignment.
-Layout/ExtraSpacing:
-  Exclude:
-    - 'config/environments/production.rb'
-    - 'spec/requests/api/v1/cards_spec.rb'
-    - 'spec/requests/api/v1/stories_spec.rb'
-
 # Offense count: 2
 # Cop supports --auto-correct.
 # Configuration parameters: Width, IgnoredPatterns.
