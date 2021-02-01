@@ -23,7 +23,7 @@ PrePush:
   RSpec:
     enabled: true
     description: 'Run RSpec test suite'
-    command: ['bundle', 'exec', 'rspec', 'spec']
+    command: ['docker-compose', 'exec', '-T', 'web', 'bundle', 'exec', 'rspec', 'spec']
 #PreCommit:
 #  RuboCop:
 #    enabled: true
