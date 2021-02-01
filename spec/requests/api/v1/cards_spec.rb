@@ -42,7 +42,7 @@ RSpec.describe 'Card', type: :request do
 
       expect(response.status).to eq(200)
       expect(json['data']['image']).to eq('new-image')
-   end
+    end
   end
 
   describe 'DELETE /api/v1/stories/:id/card/:id' do

@@ -26,10 +26,6 @@ Layout/ArgumentAlignment:
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyleAlignWith.
 # SupportedStylesAlignWith: either, start_of_block, start_of_line
-Layout/BlockAlignment:
-  Exclude:
-    - 'spec/requests/api/v1/cards_spec.rb'
-    - 'spec/requests/api/v1/stories_spec.rb'
 
 # Offense count: 6
 # Cop supports --auto-correct.

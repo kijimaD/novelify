@@ -44,7 +44,7 @@ RSpec.describe 'Story', type: :request do
   
       expect(response.status).to eq(200)
       expect(json['data']['title']).to eq('new-title')
-   end
+    end
   end
 
   describe 'DELETE /api/v1/stories/:id' do
