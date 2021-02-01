@@ -26,14 +26,6 @@ Layout/EmptyLines:
   Exclude:
     - 'config/environments/development.rb'
 
-# Offense count: 2
-# Cop supports --auto-correct.
-# Configuration parameters: Width, IgnoredPatterns.
-Layout/IndentationWidth:
-  Exclude:
-    - 'spec/requests/api/v1/cards_spec.rb'
-    - 'spec/requests/api/v1/stories_spec.rb'
-
 # Offense count: 1
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle, IndentationWidth.
@@ -69,32 +61,12 @@ Layout/SpaceInsideBlockBraces:
     - 'spec/factories/cards.rb'
     - 'spec/factories/stories.rb'
 
-# Offense count: 4
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, EnforcedStyleForEmptyBraces.
-# SupportedStyles: space, no_space, compact
-# SupportedStylesForEmptyBraces: space, no_space
-Layout/SpaceInsideHashLiteralBraces:
-  Exclude:
-    - 'spec/requests/api/v1/cards_spec.rb'
-    - 'spec/requests/api/v1/stories_spec.rb'
-
-# Offense count: 2
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: final_newline, final_blank_line
-Layout/TrailingEmptyLines:
-  Exclude:
-    - 'spec/factories/stories.rb'
-    - 'spec/requests/api/v1/stories_spec.rb'
-
 # Offense count: 9
 # Cop supports --auto-correct.
 # Configuration parameters: AllowInHeredoc.
 Layout/TrailingWhitespace:
   Exclude:
     - 'config/application.rb'
-    - 'spec/requests/api/v1/stories_spec.rb'
 
 # Offense count: 2
 # Configuration parameters: CountComments, CountAsOne, ExcludedMethods, IgnoredMethods.
