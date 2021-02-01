@@ -2,10 +2,9 @@ require 'rails_helper'
 
 RSpec.describe 'Story', type: :request do
   describe 'GET /api/v1/stories' do
-
     it '全てのstoryを取得する' do
       create_list(:story, 10)
-  
+
       get '/api/v1/stories'
       json = JSON.parse(response.body)
 
@@ -17,10 +16,10 @@ RSpec.describe 'Story', type: :request do
   describe 'GET /api/v1/stories/:id' do
     it '特定のstoryを取得する' do
       story = create(:story, title: 'test-title')
-  
+
       get "/api/v1/stories/#{story.id}"
       json = JSON.parse(response.body)
-  
+
       expect(response.status).to eq(200)
       expect(json['data']['title']).to eq(story.title)
     end
@@ -38,13 +37,13 @@ RSpec.describe 'Story', type: :request do
   describe 'PUT /api/v1/stories/:id' do
     it 'storyの編集を行う' do
       story = create(:story, title: 'old-title')
-  
-      put "/api/v1/stories/#{story.id}", params: { story: {title: 'new-title'}  }
+
+      put "/api/v1/stories/#{story.id}", params: { story: { title: 'new-title' } }
       json = JSON.parse(response.body)
-  
+
       expect(response.status).to eq(200)
       expect(json['data']['title']).to eq('new-title')
-   end
+    end
   end
 
   describe 'DELETE /api/v1/stories/:id' do

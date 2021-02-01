@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'Card', type: :request do
-
   let(:story) { create(:story) }
   let(:card) { create(:card, image: 'test-image') }
 
@@ -37,12 +36,12 @@ RSpec.describe 'Card', type: :request do
 
   describe 'PUT /api/v1/stories/:id/cards/:id' do
     it 'cardの編集を行う' do
-      put "/api/v1/stories/#{story.id}/cards/#{card.id}", params: { card: {image: 'new-image'}  }
+      put "/api/v1/stories/#{story.id}/cards/#{card.id}", params: { card: { image: 'new-image' } }
       json = JSON.parse(response.body)
 
       expect(response.status).to eq(200)
       expect(json['data']['image']).to eq('new-image')
-   end
+    end
   end
 
   describe 'DELETE /api/v1/stories/:id/card/:id' do
