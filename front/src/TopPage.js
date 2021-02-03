@@ -31,6 +31,12 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     marginRight: theme.spacing(2),
   },
+  toolbar: {
+    display: 'flex',
+  },
+  loginButton: {
+    marginLeft: 'auto',
+  },
   heroContent: {
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(8, 0, 6),
@@ -55,6 +61,9 @@ export default function Album() {
           <Typography variant="h6" color="inherit" noWrap>
             Novelify
           </Typography>
+          <Button color="inherit" className={classes.loginButton}>
+            ログイン
+          </Button>
         </Toolbar>
       </AppBar>
       <main>
