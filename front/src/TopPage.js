@@ -37,12 +37,9 @@ const useStyles = makeStyles((theme) => ({
   loginButton: {
     marginLeft: 'auto',
   },
-  heroContent: {
+  content: {
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(8, 0, 6),
-  },
-  heroButtons: {
-    marginTop: theme.spacing(4),
   },
   footer: {
     backgroundColor: theme.palette.background.paper,
@@ -67,17 +64,17 @@ export default function Album() {
         </Toolbar>
       </AppBar>
       <main>
-        {/* Hero unit */}
-        <div className={classes.heroContent}>
+        {/* unit */}
+        <div className={classes.content} align="left">
           <Container maxWidth="md">
-            <Typography component="h1" variant="h2" align="left" color="textPrimary" gutterBottom>
+            <Typography component="h1" variant="h2" color="textPrimary" gutterBottom>
               Novelify
             </Typography>
-            <Typography variant="h5" align="left" color="textSecondary" paragraph>
+            <Typography variant="h5" color="textSecondary" paragraph>
               分岐で遊ぶアプリ
             </Typography>
-            <div className={classes.heroButtons}>
-              <Grid container spacing={2} justify="left">
+            <div>
+              <Grid container spacing={2}>
                 <Grid item>
                   <Button variant="contained" color="primary">
                     会員登録
