@@ -67,10 +67,10 @@ export default function Album() {
         {/* unit */}
         <div className={classes.content} align="left">
           <Container maxWidth="md">
-            <Typography component="h1" variant="h2" color="textPrimary" gutterBottom>
+            <Typography component="h1" variant="h2" color="textPrimary">
               Novelify
             </Typography>
-            <Typography variant="h5" color="textSecondary" paragraph>
+            <Typography color="textSecondary" paragraph>
               分岐で遊ぶアプリ
             </Typography>
             <div>
