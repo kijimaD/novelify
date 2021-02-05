@@ -31,8 +31,8 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     marginRight: theme.spacing(2),
   },
-  toolbar: {
-    display: 'flex',
+  appBar: {
+    backgroundColor: theme.palette.warning.dark,
   },
   loginButton: {
     marginLeft: 'auto',
@@ -53,7 +53,7 @@ export default function Album() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <AppBar position="relative">
+      <AppBar position="relative" className={classes.appBar}>
         <Toolbar>
           <Typography variant="h6" color="inherit" noWrap>
             Novelify
