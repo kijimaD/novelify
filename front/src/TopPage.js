@@ -13,6 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import ChangeHistoryIcon from '@material-ui/icons/ChangeHistory';
 
 function Copyright() {
   return (
@@ -24,6 +25,31 @@ function Copyright() {
       {new Date().getFullYear()}
       {'.'}
     </Typography>
+  );
+}
+
+function RankingCard() {
+  const useStyles = makeStyles((theme) => ({
+    ranking: {
+      marginBottom: theme.spacing(2),
+      padding: theme.spacing(1),
+    },
+  }));
+  const classes = useStyles();
+
+  return (
+    <Card position="relative" className={classes.ranking}>
+      <Grid justify="space-between" container>
+        <Grid>
+          <Typography paragraph>
+            これはstoryのタイトルです。
+          </Typography>
+        </Grid>
+        <Grid>
+          <Button><ChangeHistoryIcon/></Button>
+        </Grid>
+      </Grid>
+    </Card>
   );
 }
 
@@ -90,7 +116,12 @@ export default function Album() {
         </div>
         <div className={classes.content} align="left">
           <Container maxWidth="md">
-            <b>ここにリストが入る</b>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認する
+            <RankingCard />
+            <RankingCard />
+            <RankingCard />
+            <RankingCard />
+            <RankingCard />
+            <RankingCard />
           </Container>
         </div>
         <div className={classes.content} align="left">
