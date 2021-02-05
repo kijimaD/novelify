@@ -37,6 +37,10 @@ const useStyles = makeStyles((theme) => ({
   loginButton: {
     marginLeft: 'auto',
   },
+  topContent: {
+    backgroundColor: theme.palette.warning.light,
+    padding: theme.spacing(8, 0, 6),
+  },
   content: {
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(8, 0, 6),
@@ -65,9 +69,9 @@ export default function Album() {
       </AppBar>
       <main>
         {/* unit */}
-        <div className={classes.content} align="left">
+        <div className={classes.topContent} align="left">
           <Container maxWidth="md">
-            <Typography component="h1" variant="h2" color="textPrimary">
+            <Typography color="textPrimary" component="h1" variant="h2">
               Novelify
             </Typography>
             <Typography color="textSecondary" paragraph>
