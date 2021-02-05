@@ -116,6 +116,9 @@ export default function Album() {
         </div>
         <div className={classes.content} align="left">
           <Container maxWidth="md">
+            <Typography color="textPrimary" variant="h4" gutterBottom>
+              ランキング
+            </Typography>
             <RankingCard />
             <RankingCard />
             <RankingCard />
