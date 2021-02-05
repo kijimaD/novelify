@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(8, 0, 6),
   },
   footer: {
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: theme.palette.warning.dark,
     padding: theme.spacing(6),
   },
 }));
