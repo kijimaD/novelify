@@ -32,6 +32,8 @@ group :development, :test do
   # rspecの導入
   gem "factory_bot_rails"
   gem "rspec-rails"
+
+  gem 'graphiql-rails'
 end
 
 group :development do
@@ -53,4 +55,3 @@ gem 'msgpack', '~> 1.3.3'
 
 # graphql
 gem 'graphql'
-gem 'graphiql-rails'
