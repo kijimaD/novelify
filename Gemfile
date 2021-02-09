@@ -32,6 +32,8 @@ group :development, :test do
   # rspecの導入
   gem "factory_bot_rails"
   gem "rspec-rails"
+
+  gem 'graphiql-rails'
 end
 
 group :development do
@@ -50,3 +52,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'msgpack', '~> 1.3.3'
+
+# graphql
+gem 'graphql'

@@ -28,3 +28,4 @@
 
 # front
 /front/node_modules
+/front/.eslintcache
