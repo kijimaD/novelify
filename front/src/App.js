@@ -4,9 +4,7 @@ import TopPage from './TopPage';
 
 function App() {
   return (
-    <div className="App">
-      <TopPage/>
-    </div>
+    <TopPage/>
   );
 }
 
