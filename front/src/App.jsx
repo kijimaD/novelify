@@ -1,8 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 import TopPage from './TopPage';
 
-function App() {
+const App = () => {
   return (
     <TopPage/>
   );
