@@ -1,6 +1,7 @@
+import React from 'react'
 import TopPage from './TopPage';
 
-function App() {
+const App = () => {
   return (
     <TopPage/>
   );
